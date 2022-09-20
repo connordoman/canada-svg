@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <head>
+        <title>Canada SVG Clickable Test</title>
+        <link rel="stylesheet" href="res/style/style.css" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇨🇦</text></svg>"
+        />
+    </head>
+    <body>
+        <div id="content">
+            <div id="sidebar">
+                <h1>Canada SVG Clickable Test</h1>
+                <div id="currentProvince">
+                    <div id="provinceHeader">
+                        <div class="provinceTitles">
+                            <h2>Current Province</h2>
+                            <br />
+                            <h3 id="provinceName"></h3>
+                        </div>
+
+                        <div id="provinceFlag"></div>
+                    </div>
+                    <p id="provinceDescription"></p>
+                    <hr />
+                    <p>
+                        <a
+                            id="provinceLink"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        ></a>
+                    </p>
+                </div>
+            </div>
+            <div id="map">
+                <object
+                    id="canada-map"
+                    data="res/img/canada.svg"
+                    type="image/svg+xml"
+                    width="512px"
+                ></object>
+            </div>
+            <script src="res/script/clickable_map.js"></script>
+        </div>
+        <footer id="acknowledgments">
+            <p>
+                Made by
+                <a
+                    href="https://twitter.com/connordoman"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Connor Doman</a
+                >.
+                <br />
+                Descriptions written by
+                <a
+                    href="https://github.com/features/copilot/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Github Copilot </a
+                >.
+            </p>
+        </footer>
+    </body>
+</html>
